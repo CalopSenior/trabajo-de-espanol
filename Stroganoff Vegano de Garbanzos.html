@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroganoff Vegano de Garbanzos</title>
+    
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    height: 100vh;
+}
+.header {
+    background: #fdc068;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.header > * {
+    color: #fff;
+    font-weight: 600;
+    display: inline;
+}
+.content {
+    margin: 10px auto auto auto;
+    background: #f5e3c9;
+    width: 90vw;
+    border-radius: 10px;
+    padding: 20px;
+}
+.ingredients, .make {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg,#fff,#fcfaf8);
+    width: max-content;
+    padding: 10px;
+    border: 1px double #fdc068;
+    border-radius: 10px;
+    margin: 10px 0 0 5%;
+    transition: all 200ms ease-in-out;
+}
+.ingredients:hover {
+    animation: float 1s ease-in-out infinite;
+}
+.make {
+    max-width: 80vw;
+}
+.topic {
+    margin-top: 2px;
+    cursor: pointer;
+    word-wrap: break-word;
+    transition: all 100ms ease;
+}
+.topic:hover {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.topic::before {
+    content: "•";
+    margin-left: 5px;
+}
+.comport {
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-top: 15px;
+}
+.video {
+    border: 1px double #fdc068;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    width: 450px;
+    height: calc(450px * 0.66);
+}
+.video:hover {
+    width: 600px;
+    height: calc(600px * 0.66);
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <section class="header">
+            <h1>Receta de Stroganoff Vegano de Garbanzos</h1>
+            <div>
+                <h3>Miembros:</h3>
+                <span class="topic">Breno Sérgio</span>
+                <span class="topic">Francyele dos Santos</span>
+                <span class="topic">Gabriel dos Santos</span>
+                <span class="topic">João Victor Gomes</span>
+                <span class="topic">Larissa Lima</span>
+            </div>
+        </section>
+        <section class="content">
+            <div class="ingredients">
+                <p>Ingredientes:</p>
+                <span class="topic">2 tomates;</span>
+                <span class="topic">1/2 taza garbanzos cocidos;</span>
+                <span class="topic">1 patata;</span>
+                <span class="topic">1 caja de crema de leche;</span>
+                <span class="topic">Aceite y ajo para saltear;</span>
+                <span class="topic">olor verde al gusto;</span>
+                <span class="topic">especias secas al gusto;</span>
+            </div>
+            <div class="make">
+                <p>Modo de Preparación:</p>
+                <span class="topic">Empezar cortando los dos tomates en trozos pequeños y saltearlos con aceite y ajo, cuando hierva poner los aliños y machacar los trozos que aún son grandes y dejar hervir unos 15 minutos.</span>
+                <span class="topic">Después de saltear, añade a la salsa los garbanzos ya cocidos (opcionalmente puedes añadir otras verduras cocidas, pero solo los garbanzos quedan bastante sabrosos) y deja hervir a fuego lento durante 10 minutos, esto reduce la acidez.</span>
+                <span class="topic">Apaga el fuego y espera a que la mezcla se enfríe con la tapa puesta. Agregue una caja de crema de leche y mezcle hasta que quede suave, vuelva a encender a fuego lento y espere a que espese.</span>
+                <span class="topic">Sirve en un plato con el acompañamiento que quieras (en el video: patata paja casera y sunomono). Buen provecho 😋</span>
+            </div>
+            <div class="comport">
+                <iframe class="video" src="https://drive.google.com/file/d/1QWk3kBJaYlr7H0IU10LLLYz50n11mX_F/preview"></iframe>
+                <span class="topic"><a href="https://drive.google.com/file/d/1QWk3kBJaYlr7H0IU10LLLYz50n11mX_F/preview">Ver en la Google Drive</a></span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
